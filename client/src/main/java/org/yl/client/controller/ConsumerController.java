@@ -6,6 +6,7 @@ import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import org.yl.client.component.MyHealthIndicator;
 import org.yl.client.service.ConsumerService;
 import vo.User;
 
@@ -17,6 +18,9 @@ public class ConsumerController {
 
     @Autowired
     private DiscoveryClient discoveryCLient;
+
+    @Autowired
+    private MyHealthIndicator myHealthIndicator;
 
     @Autowired
     private ConsumerService consumerService;
@@ -37,6 +41,12 @@ public class ConsumerController {
     public String user() throws Exception {
 
         return consumerService.getData();
+    }
+
+    @RequestMapping(value = "/status/{status}",method = RequestMethod.GET)
+    public String modifyStatus(@PathVariable("status") String status) throws Exception{
+        myHealthIndicator.setRunStatus(Boolean.valueOf(status));
+        return "status is " + status;
     }
 
 }

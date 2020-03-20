@@ -1,0 +1,5 @@
+org/yl/server/ServerApplication.class
+vo/User.class
+org/yl/server/controller/HealthTestController.class
+org/yl/server/controller/HelloController.class
+org/yl/server/component/HealthCheck.class
