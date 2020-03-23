@@ -1,6 +1,0 @@
-org/yl/client/controller/ConsumerController.class
-vo/User.class
-org/yl/client/component/MyHealthIndicator.class
-org/yl/client/component/MyHealthHealthCheckHandler.class
-org/yl/client/ClientApplication.class
-org/yl/client/service/ConsumerService.class

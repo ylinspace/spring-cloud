@@ -10,7 +10,6 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @EnableEurekaServer
 @SpringBootApplication
-@ComponentScan("org.yl.eureka")
 public class EurekaApplication {
 
     public static void main(String [] args) throws Exception{

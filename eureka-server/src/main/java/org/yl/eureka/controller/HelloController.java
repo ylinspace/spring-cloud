@@ -12,7 +12,7 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello() throws Exception{
         System.out.println("Hello !");
-        return "Hello eureka!";
+        return "Hello eureka server!";
     }
 
 }
