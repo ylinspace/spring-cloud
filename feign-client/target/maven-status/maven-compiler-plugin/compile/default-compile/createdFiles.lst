@@ -1,4 +1,0 @@
-vo/User.class
-org/yl/feign/controller/HelloController.class
-org/yl/feign/FeignApplication.class
-org/yl/feign/service/HelloService.class
